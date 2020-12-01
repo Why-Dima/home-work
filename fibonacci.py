@@ -8,6 +8,8 @@ while fib_sum < 10000000:#выводится должно последнее ч�
     fib_sum = a + b
     a = b
     b = fib_sum
+    if b > 10000000:
+        break
     list_fib.append(fib_sum)
     if int(fib_sum)% 2 == 0:#выводим последовательность из четных чисел
         list_fib_two.append(fib_sum)
